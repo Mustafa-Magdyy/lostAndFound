@@ -1,16 +1,19 @@
 package lostAndFound;
 
+import java.awt.Dimension;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class LoginView extends JFrame{
 	private JLabel labelUserName, labelPassword;
-	private JTextField textFieldUserName, textFieldPassword;
+	private JTextField textFieldUserName;
+	private JPasswordField PasswordField;
 	private JButton buttonLogin;
 	
 	public LoginView(){
@@ -22,14 +25,17 @@ public class LoginView extends JFrame{
 		panel.add(labelUserName);
 		
 		textFieldUserName = new JTextField();
+		textFieldUserName.setPreferredSize(new Dimension(200, 20));
 		panel.add(textFieldUserName);
 		
 		labelPassword = new JLabel();
 		labelPassword.setText("Password: ");
 		panel.add(labelPassword);
 		
-		textFieldPassword = new JTextField();
-		panel.add(textFieldPassword);
+		PasswordField = new JPasswordField();
+		PasswordField.setPreferredSize(new Dimension(200, 20));
+		PasswordField.setEchoChar('*');
+		panel.add(PasswordField);
 		
 		buttonLogin = new JButton("Login");
 		panel.add(buttonLogin);

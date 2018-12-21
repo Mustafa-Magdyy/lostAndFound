@@ -15,8 +15,8 @@ public class LoginController {
 	public class LoginListener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent click) {
+			// access data base here
 			System.out.println("successful login");
 		}
 	}
-	
 }
