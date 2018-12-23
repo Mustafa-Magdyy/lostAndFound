@@ -1,13 +1,14 @@
 package lostAndFound;
 
 public class UserModel {
-	private String name, userName, email, password;
+	private String name, userName, phoneNumber, email, password;
 	private int age;
 	
 	public UserModel() {}
-	public UserModel(String name, String userName, String email, String password, int age) {
+	public UserModel(String name, String userName, String phoneNumber, String email, String password, int age) {
 		this.name = name;
 		this.userName = userName;
+		this.phoneNumber = phoneNumber;
 		this.email = email;
 		this.password = password;
 		this.age = age;
@@ -23,6 +24,12 @@ public class UserModel {
 	}
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	public String getPhoneNumber() {
+		return phoneNumber;
 	}
 	public String getEmail() {
 		return email;
