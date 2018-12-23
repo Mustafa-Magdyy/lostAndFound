@@ -7,18 +7,16 @@ import javax.swing.ImageIcon;
 
 public class ItemModel {
 	private String name, description, place, securityQuestion;
-	private ImageIcon image;
 	private UserController owner;
 	private ArrayList<responseController> response;
 	
-	public ItemModel() {name = ""; description = ""; place = ""; image = null; owner = null;}
-	public ItemModel(UserController owner, String name, String description, String place, String securityQuestion, ImageIcon image) {
+	public ItemModel() {name = ""; description = ""; place = ""; owner = null;}
+	public ItemModel(UserController owner, String name, String description, String place, String securityQuestion) {
 		this.owner = owner;
 		this.name = name;
 		this.description = description;
 		this.place = place;
 		this.securityQuestion = securityQuestion;
-		this.image = image;
 		response = new ArrayList<responseController>();
 	}
 	public void setName(String name) {
@@ -44,12 +42,6 @@ public class ItemModel {
 	}
 	public String getSecurityQuestion() {
 		return securityQuestion;
-	}
-	public void setImage(ImageIcon image) {
-		this.image = image;
-	}
-	public ImageIcon getImage() {
-		return image;
 	}
 	public void setOwner(UserController owner) {
 		this.owner = owner;
