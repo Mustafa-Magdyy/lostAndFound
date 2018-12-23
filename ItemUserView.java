@@ -21,11 +21,6 @@ public class ItemUserView extends JFrame{
 		JPanel panel = new JPanel();
 		getContentPane().add(panel);
 		
-		if(model.getImage() != null) {
-			image = new JLabel(model.getImage());
-			panel.add(image);
-		}
-		
 		labelOwnerName = new JLabel("Owner Name: ");
 		panel.add(labelOwnerName);
 		textFieldOwnerName = new JTextField();

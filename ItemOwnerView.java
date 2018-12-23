@@ -11,6 +11,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+// don't forget to add security question to owner view 
+
 public class ItemOwnerView extends JFrame{
 	private JLabel labelOwnerName, labelOwnerEmail, labelPhoneNumber, labelName, labelDescription, labelPlace, image;
 	private JTextField textFieldOwnerName, textFieldOwnerEmail, textFieldPhoneNumber, textFieldName, textFieldDescription;
@@ -23,11 +25,6 @@ public class ItemOwnerView extends JFrame{
 		
 		JPanel panel = new JPanel();
 		getContentPane().add(panel);
-		
-		if(model.getImage() != null) {
-			image = new JLabel(model.getImage());
-			panel.add(image);
-		}
 		
 		labelOwnerName = new JLabel("Owner Name: ");
 		panel.add(labelOwnerName);
