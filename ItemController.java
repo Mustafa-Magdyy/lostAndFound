@@ -12,7 +12,7 @@ public class ItemController {
 	private ItemResponseView responseView;
 	private ItemModel model;
 	
-	public ItemController(ItemOwnerView ownerView, ItemUserView userView, ItemSecurityView securityView, ItemResponseView responseView, ItemModel model) {
+	public ItemController(ItemModel model, ItemOwnerView ownerView, ItemUserView userView, ItemSecurityView securityView, ItemResponseView responseView) {
 		this.ownerView = ownerView;
 		this.userView = userView;
 		this.securityView = securityView;
