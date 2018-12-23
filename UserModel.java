@@ -1,11 +1,15 @@
 package lostAndFound;
 
+import java.util.ArrayList;
+
 public class UserModel {
 	private String name, userName, phoneNumber, email, password;
 	private int age;
+	private ArrayList<ItemController> item;
 	
 	public UserModel() {}
 	public UserModel(String name, String userName, String phoneNumber, String email, String password, int age) {
+		item = new ArrayList<ItemController>();
 		this.name = name;
 		this.userName = userName;
 		this.phoneNumber = phoneNumber;
@@ -49,4 +53,11 @@ public class UserModel {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	public void addItem(ItemController ic) {
+		item.add(ic);
+	}
+	public void getItem(int indx) {
+		item.get(indx);
+	}
+	
 }
