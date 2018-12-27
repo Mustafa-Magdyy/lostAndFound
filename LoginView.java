@@ -43,9 +43,19 @@ public class LoginView extends JFrame{
 		setTitle("Login");
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setLocationRelativeTo(null);
-		setResizable(false);
+		setResizable(true);
 		pack();
 	}
+
+	public String getUserName() {
+		return textFieldUserName.getText();
+	}
+
+	public String getPassword() {
+		return new String(PasswordField.getPassword());
+	}
+
+
 	public void addLoginListener(ActionListener login) {
 		buttonLogin.addActionListener(login);
 	}

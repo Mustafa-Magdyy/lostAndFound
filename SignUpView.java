@@ -79,6 +79,31 @@ public class SignUpView extends JFrame{
         setResizable(true);
         pack();
     }
+
+    public String getEmail() {
+        return textFieldEmail.getText();
+    }
+
+    public String getName() {
+        return textFieldName.getText();
+    }
+
+    public String getPhoneNumber() {
+        return textFieldPhoneNumber.getText();
+    }
+
+    public String getUserName() {
+        return textFieldUserName.getText();
+    }
+
+    public String getPassword() {
+        return new String(PasswordField.getPassword());
+    }
+
+    public String getReEnterPassword() {
+        return new String(ReEnterPasswordField.getPassword());
+    }
+
     public void addSignUpListener(ActionListener SignUp) {
         buttonSignUp.addActionListener(SignUp);
     }

@@ -60,7 +60,6 @@ public class UserView extends JFrame {
 		panel.add(labelAge);
 		textFieldAge = new JTextField();
 		textFieldAge.setPreferredSize(new Dimension(200, 20));
-		textFieldAge.setText(Integer.toString(model.getAge()));
 		panel.add(textFieldAge);
 		
 		buttonSave = new JButton("Save");

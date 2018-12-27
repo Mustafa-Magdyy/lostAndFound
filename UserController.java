@@ -66,12 +66,13 @@ public class UserController {
 	public void setPassword(String password) {
 		model.setPassword(password);
 	}
-	public int getAge() {
-		return model.getAge();
+	public UserModel getModel() {
+		return model;
 	}
-	public void setAge(int age) {
-		model.setAge(age);
+	public UserView getView() {
+		return view;
 	}
+
 	public void view() {
 		view.setVisible(true);
 	}

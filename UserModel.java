@@ -4,18 +4,16 @@ import java.util.ArrayList;
 
 public class UserModel {
 	private String name, userName, phoneNumber, email, password;
-	private int age;
 	private ArrayList<ItemController> item;
 	
 	public UserModel() {}
-	public UserModel(String name, String userName, String phoneNumber, String email, String password, int age) {
+	public UserModel(String name, String userName, String phoneNumber, String email, String password) {
 		item = new ArrayList<ItemController>();
 		this.name = name;
 		this.userName = userName;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
 		this.password = password;
-		this.age = age;
 	}
 	public String getName() {
 		return name;
@@ -46,12 +44,6 @@ public class UserModel {
 	}
 	public void setPassword(String password) {
 		this.password = password;
-	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
 	}
 	public void addItem(ItemController ic) {
 		item.add(ic);
